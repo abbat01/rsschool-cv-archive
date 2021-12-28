@@ -7,64 +7,6 @@ body {
     color: black;
     background-color: white;
 }
-
-
-/*.headerinfo {
-    text-align: center;
-    margin-top: 35px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.btn {
-    background-color: #FFD700;
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-end;
-    border: 2px solid #FFD700;
-    padding: 10px;
-    border-width: 1px;
-    border-radius: 25px;
-    max-width: 250px;
-    text-align: center;
-    display: inline;
-    margin-right: 5px;
-    color: black !important;
-}
-
-.container {
-    width: 250px;
-}
-
-.container-menu {
-    display: flex;
-    padding: 50px 30px;
-    margin: 0%;
-    justify-content: center;
-}
-
-.text-header {
-    padding: 20px;
-    font-size: medium;
-    text-align: center;
-}
-
-.img-bmw {
-    object-fit: cover;
-    width: 250px;
-}
-
-.textabme {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    width: 300px;
-    order: -1;
-}*/
-
 nav {
     display: flex;
     justify-content: center;
@@ -183,4 +125,62 @@ main {
 .coming-wrapper {
     text-align: center;
     font-size: 1.5rem;
+}
+.image-my-goal img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+a i {
+    font-size: 48px;
+    margin: 15px 15px 15px 0px;
+    text-decoration: none;
+    color: white;
+}
+.my-goal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: gray 0px 10px 10px;
+}
+.goal-wrapper {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.desc-my-goal {
+    color: black;
+    padding: 0px 20px 0px 20px;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: gray 0px 10px 10px;
+    margin-bottom: 25px;
+}
+.projects-wrapper {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.desc-projects {
+    color: black;
+    padding: 0px 20px 0px 20px;
+    text-align: right;
+}
+.image-projects img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+footer {
+    background-color: #002147;
+    text-align: center;
 }

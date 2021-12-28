@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a4a35e294.js" crossorigin="anonymous"></script>
     <title>CV3</title>
 </head>
 
@@ -18,7 +19,7 @@
             <div class="links-nav" id="cominglink">
                 <a>Обо мне</a>
                 <a href="#coming">Моя история прихода в школу</a>
-                <a>Мои цели</a>
+                <a href="#goal">Мои цели</a>
                 <a>Мои выполненные проекты</a>
             </div>
         </nav>
@@ -43,18 +44,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#coming1link").on("click", "a", function (event) {
-                    event.preventDefault();
-                    var id = $(this).attr('href'),
-                        top = $(id).offset().top;
-                    $('body,html').animate({
-                        scrollTop: top
-                    }, 700);
-                });
-            });
-        </script>
         <div class="coming-school" id="coming">
             <div class="coming-wrapper">
                 <h3>Моя история прихода в школу "RSSchool"</h3>
@@ -70,26 +59,46 @@
                 </div>
             </div>
         </div>
-        <div class="about-me" id="goal">
-            <div class="about-wrapper">
+        <div class="my-goal" id="goal">
+            <div class="goal-wrapper">
                 <h3>Мои цели</h3>
             </div>
             <div class="d-flex">
-                <div class="my goal">
+                <div class="image-my-goal">
                     <img src="./images/uuW5xeF8Bo8.jpg" alt="goal">
                 </div>
-                <div class="desc-about-me">
+                <div class="desc-my-goal">
                     <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora corrupti ullam
                         molestias sequi reiciendis, facilis consectetur, impedit temporibus eveniet, aperiam soluta
                         praesentium pariatur! Eum voluptatum possimus voluptates molestias earum.</span>
                 </div>
             </div>
         </div>
+        <div class="projects" id="projects">
+            <div class="projects-wrapper">
+                <h3>Моя история прихода в школу "RSSchool"</h3>
+            </div>
+            <div class="d-flex">
+                <div class="desc-projects">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora corrupti ullam
+                        molestias sequi reiciendis, facilis consectetur, impedit temporibus eveniet, aperiam soluta
+                        praesentium pariatur! Eum voluptatum possimus voluptates molestias earum.</span>
+                </div>
+                <div class="image-projects">
+                    <img src="./images/uuW5xeF8Bo8.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <a href="https://www.instagram.com/andrey_abbat/?hl=ru"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/abbat01"><i class="fab fa-github"></i></a>
+        <a href="https://vk.com/officialabbat"><i class="fab fa-vk"></i></a>
+    </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#goallink").on("click", "a", function (event) {
+            $("#cominglink").on("click", "a", function (event) {
                 event.preventDefault();
                 var id = $(this).attr('href'),
                     top = $(id).offset().top;
@@ -99,7 +108,6 @@
             });
         });
     </script>
-
 </body>
 
 </html>
