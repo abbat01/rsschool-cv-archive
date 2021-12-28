@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
     color: black;
-    background-color: white;
+    background: white;
 }
 nav {
     display: flex;
@@ -163,7 +163,7 @@ a i {
     background-color: whitesmoke;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: gray 0px 10px 10px;
+    box-shadow: gray 0px 10px 5px;
     margin-bottom: 25px;
 }
 .projects-wrapper {
