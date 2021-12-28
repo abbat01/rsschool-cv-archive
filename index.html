@@ -28,7 +28,7 @@
         </div>
     </header>
     <main>
-        <div class="about-me">
+        <div class="about-me" id="coming1">
             <div class="about-wrapper">
                 <h3>Обо мне</h3>
             </div>
@@ -43,6 +43,18 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#coming1link").on("click", "a", function (event) {
+                    event.preventDefault();
+                    var id = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({
+                        scrollTop: top
+                    }, 700);
+                });
+            });
+        </script>
         <div class="coming-school" id="coming">
             <div class="coming-wrapper">
                 <h3>Моя история прихода в школу "RSSchool"</h3>
@@ -58,11 +70,26 @@
                 </div>
             </div>
         </div>
+        <div class="about-me" id="goal">
+            <div class="about-wrapper">
+                <h3>Мои цели</h3>
+            </div>
+            <div class="d-flex">
+                <div class="my goal">
+                    <img src="./images/uuW5xeF8Bo8.jpg" alt="goal">
+                </div>
+                <div class="desc-about-me">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora corrupti ullam
+                        molestias sequi reiciendis, facilis consectetur, impedit temporibus eveniet, aperiam soluta
+                        praesentium pariatur! Eum voluptatum possimus voluptates molestias earum.</span>
+                </div>
+            </div>
+        </div>
     </main>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#cominglink").on("click", "a", function (event) {
+            $("#goallink").on("click", "a", function (event) {
                 event.preventDefault();
                 var id = $(this).attr('href'),
                     top = $(id).offset().top;
@@ -72,6 +99,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
