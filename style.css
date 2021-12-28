@@ -34,13 +34,13 @@ body {
 }
 .container {
    width: 250px;
-    
+   
 }
 .container-menu {
     display: flex;
-    padding: 50px 30px;
+    padding: 50px 10px;
     margin: 0%;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 .text-header {
@@ -54,9 +54,19 @@ text-align: center;
 
 }
 .textabme {
+    width: 100%;
+    text-align: left;
+    margin-left: 15px;
+}
+.history {
+    object-fit: cover;
+    width: 100%;
+    text-align: right;
+    margin-right: 15px;
+}
+.container-menu2 {
     display: flex;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    width: 300px;
-    order: -1;
+    padding: 50px 10px;
+    margin: 0%;
+    justify-content: flex-end;
 }

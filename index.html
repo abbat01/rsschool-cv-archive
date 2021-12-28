@@ -5,33 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>CV3</title>
 </head>
 
-<body class="body-bg">
-    <header class="header">
-        <h1 class="headerinfo">Привет, я abbat01!</h1>
-        <p class="text-header">Этот сайт создан для онлайн-школы RSschool</p>
+<body>
+    <header>
+        <nav>
+            <div class="links-nav" id="cominglink">
+                <a>Обо мне</a>
+                <a href="#coming">Моя история прихода в школу</a>
+                <a>Мои цели</a>
+                <a>Мои выполненные проекты</a>
+            </div>
+        </nav>
+        <div class="text-header">
+            <span>Привет, я abbat01!</span>
+            <span>Этот сайт создан для онлайн-школы RSschool</span>
+        </div>
     </header>
-    <nav class="buttons">
-        <button class="btn"><strong>Обо мне</strong></button>
-        <button class="btn"><strong>Моя история прихода в школу</strong></button>
-        <button class="btn"><strong>Мои цели</strong></button>
-        <button class="btn"><strong>Мои выполненные проекты</strong></button>
-    </nav>
-    <div class="container-menu">
-        <div class="textabme">
-            Обо мне: ытафыаифыиапфрыиапфыпирфыпфипывпиывпиывапиывапиывапиаывпиаывопиаывпиаывпиваыпивапиваопв
+    <main>
+        <div class="about-me">
+            <div class="about-wrapper">
+                <h3>Обо мне</h3>
+            </div>
+            <div class="d-flex">
+                <div class="image-about-me">
+                    <img src="./images/uuW5xeF8Bo8.jpg" alt="">
+                </div>
+                <div class="desc-about-me">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora corrupti ullam
+                        molestias sequi reiciendis, facilis consectetur, impedit temporibus eveniet, aperiam soluta
+                        praesentium pariatur! Eum voluptatum possimus voluptates molestias earum.</span>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <img class="img-bmw" src="./images/uuW5xeF8Bo8.jpg" alt="bmw">
+        <div class="coming-school" id="coming">
+            <div class="coming-wrapper">
+                <h3>Моя история прихода в школу "RSSchool"</h3>
+            </div>
+            <div class="d-flex">
+                <div class="desc-coming-me">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora corrupti ullam
+                        molestias sequi reiciendis, facilis consectetur, impedit temporibus eveniet, aperiam soluta
+                        praesentium pariatur! Eum voluptatum possimus voluptates molestias earum.</span>
+                </div>
+                <div class="image-coming-me">
+                    <img src="./images/uuW5xeF8Bo8.jpg" alt="">
+                </div>
+            </div>
         </div>
-
-    </div>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#cominglink").on("click", "a", function (event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 700);
+            });
+        });
+    </script>
 </body>
 
 </html>
