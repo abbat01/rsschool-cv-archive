@@ -15,6 +15,9 @@ nav {
     padding: 10px;
     background-color: #002147;
 }
+.text-header h2,h1 {
+    margin: 5px 0 5px 0;
+}
 
 .links-nav a {
     color: white;
