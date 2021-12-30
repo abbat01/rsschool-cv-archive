@@ -7,6 +7,7 @@ body {
     color: black;
     background: white;
 }
+
 nav {
     display: flex;
     justify-content: center;
@@ -126,17 +127,20 @@ main {
     text-align: center;
     font-size: 1.5rem;
 }
+
 .image-my-goal img {
     width: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 a i {
     font-size: 48px;
-    margin: 15px 15px 15px 0px;
+    margin: 15px;
     text-decoration: none;
     color: white;
 }
+
 .my-goal {
     display: flex;
     justify-content: center;
@@ -147,14 +151,17 @@ a i {
     padding: 15px;
     box-shadow: gray 0px 10px 10px;
 }
+
 .goal-wrapper {
     text-align: center;
     font-size: 1.5rem;
 }
+
 .desc-my-goal {
     color: black;
     padding: 0px 20px 0px 20px;
 }
+
 .projects {
     display: flex;
     justify-content: center;
@@ -166,21 +173,118 @@ a i {
     box-shadow: gray 0px 10px 5px;
     margin-bottom: 25px;
 }
+
 .projects-wrapper {
     text-align: center;
     font-size: 1.5rem;
 }
+
 .desc-projects {
     color: black;
     padding: 0px 20px 0px 20px;
     text-align: right;
 }
+
 .image-projects img {
     width: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 footer {
     background-color: #002147;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+#rsschool-logo {
+    width: 80px;
+    height: 48px;
+}
+
+.copyright {
+    color: white;
     text-align: center;
+    padding-bottom: 15px;
+}
+
+.rsschool-link {
+    font-size: 48px;
+    text-decoration: none;
+    color: white;
+    margin: 15px 15px 15px 15px;
+    width: 80px;
+    height: 48px;
+}
+
+@media (max-width:1022px) {
+    main {
+        margin: 0px;
+    }
+    .links-nav {
+        text-align: center;
+    }
+    .links-nav a {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 0px;
+    }
+    .links-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-header h2 {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+    }
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me {
+        border-radius: 0;
+    }
+    .image-about-me {
+        width: 300px;
+        padding-bottom: 15px;
+    }
+    .coming-school {
+        border-radius: 0;
+    }
+    .desc-coming-me {
+        padding-bottom: 15px;
+        width: 300px;
+    }
+    .my-goal {
+        border-radius: 0;
+    }
+    .desc-my-goal {
+        padding-top: 15px;
+        width: 300px;
+    }
+    .desc-about-me {
+        width: 300px;
+    }
+    .desc-projects {
+        padding-bottom: 15px;
+        width: 300px;
+    }
+    .projects {
+        border-radius: 0px;
+    }
 }
