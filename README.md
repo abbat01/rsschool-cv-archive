@@ -1,2 +1,1 @@
-# test
-# for-andrey
+abbat01.github.io/rsschool-cv/
